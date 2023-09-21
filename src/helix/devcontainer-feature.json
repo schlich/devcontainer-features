@@ -1,0 +1,9 @@
+{
+    "id": "helix",
+    "version": "1.0.0",
+    "name": "Helix",
+    "description": "Installs the Helix code editor from source binaries.",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
