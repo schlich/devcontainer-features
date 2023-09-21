@@ -3,13 +3,6 @@
     "version": "1.0.0",
     "name": "Container Structure Tests",
     "description": "Installs the Container Structure Test tool.",
-    "options": {
-        "addAlias": {
-            "type": "boolean",
-            "default": false,
-            "description": "Adds the alias `cst` to your container's system `.bashrc`"
-        }
-    },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
