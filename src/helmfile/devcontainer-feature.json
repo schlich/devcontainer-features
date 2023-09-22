@@ -1,0 +1,9 @@
+{
+    "id": "jenkins-x",
+    "version": "1.0.0",
+    "name": "Jenkins X 3",
+    "description": "CI/CD for Kubernetes",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
