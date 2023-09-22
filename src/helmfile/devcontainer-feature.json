@@ -1,8 +1,8 @@
 {
-    "id": "jenkins-x",
+    "id": "helmfile",
     "version": "1.0.0",
-    "name": "Jenkins X 3",
-    "description": "CI/CD for Kubernetes",
+    "name": "Helmfile CLI",
+    "description": "Helmfile commands for deploying Helm sheets.",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
