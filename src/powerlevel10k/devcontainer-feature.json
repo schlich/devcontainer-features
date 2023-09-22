@@ -1,9 +1,0 @@
-{
-    "id": "powerlevel10k",
-    "version": "1.0.0",
-    "name": "powerlevel10k",
-    "description": "Installs the powerlevel10k theme for Oh My Zsh.",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ]
-}
