@@ -1,0 +1,9 @@
+{
+    "id": "grafana",
+    "version": "1.0.0",
+    "name": "Grafana",
+    "description": "Operational dashboards for your data here, there, or anywhere.",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
