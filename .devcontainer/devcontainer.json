@@ -13,7 +13,8 @@
                 ]
             },
             "extensions": [
-                "mads-hartmann.bash-ide-vscode"
+                "mads-hartmann.bash-ide-vscode",
+                "GitHub.vscode-github-actions"
             ]
         }
     },
