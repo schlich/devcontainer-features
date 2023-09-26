@@ -1,13 +1,13 @@
 
-# Jenkins X 3 (jenkins-x)
+# Helmfile CLI (helmfile)
 
-CI/CD for Kubernetes
+Helmfile commands for deploying Helm sheets.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/schlich/devcontainer-features/jenkins-x:1": {}
+    "ghcr.io/schlich/devcontainer-features/helmfile:1": {}
 }
 ```
 
