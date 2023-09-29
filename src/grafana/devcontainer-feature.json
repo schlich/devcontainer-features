@@ -1,10 +1,9 @@
 {
     "id": "grafana",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Grafana",
     "description": "Operational dashboards for your data here, there, or anywhere.",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ],
-    "postCreateCommand": "sudo update-rc.d grafana-server defaults 95 10"
+    ]
 }
