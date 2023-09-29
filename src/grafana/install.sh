@@ -1,4 +1,6 @@
 #!/bin/sh
 
-wget -qO- https://dl.grafana.com/enterprise/release/grafana-enterprise-10.1.2.linux-amd64.tar.gz | tar -xz
-sudo mv grafana-10.1.2/bin/grafana /usr/local/bin
+wget -qO- https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt update
+sudo apt install -y grafana-enterprise
