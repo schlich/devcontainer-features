@@ -1,0 +1,9 @@
+{
+    "id": "node-exporter",
+    "version": "1.0.0",
+    "name": "Prometheus Node Exporter",
+    "description": "See https://prometheus.io/docs/guides/node-exporter/.",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
