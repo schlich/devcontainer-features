@@ -1,6 +1,6 @@
 {
     "id": "grafana",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Grafana",
     "description": "Operational dashboards for your data here, there, or anywhere.",
     "installsAfter": [
