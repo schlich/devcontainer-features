@@ -1,8 +1,14 @@
 {
     "id": "openslides",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "Open Slides",
     "description": "The digital motion and assembly system.",
+    "options": {
+        "includeTestingTool": {
+            "type": "boolean",
+            "default": true
+        }
+    },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
