@@ -11,7 +11,11 @@ The digital motion and assembly system.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| includeTestingTool | - | boolean | true |
 
 
 
