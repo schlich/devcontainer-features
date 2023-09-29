@@ -1,5 +1,4 @@
 #!/bin/sh
 
-sudo apt-get install -y adduser libfontconfig1 musl
-wget https://dl.grafana.com/enterprise/release/grafana-enterprise_10.1.2_amd64.deb
-sudo dpkg -i grafana-enterprise_10.1.2_amd64.deb
+wget -wO- https://dl.grafana.com/enterprise/release/grafana-enterprise-10.1.2.linux-amd64.tar.gz | tar -xz
+sudo mv grafana-10.1.2/bin/grafana /usr/local/bin
