@@ -1,0 +1,9 @@
+{
+    "id": "cypress",
+    "version": "1.0.0",
+    "name": "Cypress",
+    "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+    "installsAfter": [
+        "mcr.microsoft.com/devcontainers/typescript-node"
+    ]
+}
