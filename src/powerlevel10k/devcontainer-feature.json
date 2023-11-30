@@ -1,0 +1,14 @@
+{
+  "id": "powerlevel10k",
+  "version": "1.0.0",
+  "name": "PowerLevel10k",
+  "description": "PowerLevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience. This implementation of a devcontainer feature will install PowerLevel10k and configure it as the default theme for Zsh following the officially recommended methods as closely as possible for v.1.19.0",
+  "documentationURL": "https://github.com/schlich/devcontainer-features/blob/master/src/powerlevel10k/README.md",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.fontfamily": "MesloLGS NF"
+      }
+    }
+  }
+}
