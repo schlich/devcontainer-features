@@ -7,7 +7,6 @@
         "ghcr.io/devcontainers/features/common-utils"
     ],
     "containerEnv": {
-        "RYE_INSTALL_OPTION": "--yes",
-        "RYE_HOME": "/usr/local/share/rye"
+        "RYE_INSTALL_OPTION": "--yes"
     }
 }
