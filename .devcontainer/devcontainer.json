@@ -1,5 +1,12 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/edouard-lopez/devcontainer-features/bats:0": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/prulloac/devcontainer-features/bun:1": {},
+        "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {}
+    },
     "customizations": {
         "vscode": {
             "settings": {
@@ -17,11 +24,5 @@
                 "GitHub.vscode-github-actions"
             ]
         }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/edouard-lopez/devcontainer-features/bats:0": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {}
-    },
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    }
 }
