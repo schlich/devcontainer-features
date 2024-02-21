@@ -1,0 +1,24 @@
+{
+    "use_uv_false": {
+        "image": "mcr.microsoft.com/devcontainers/base",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "upgradePackages": false
+            },
+            "rye": {
+                "uv": false
+            }
+        }
+    },
+    "use_uv_true": {
+        "image": "mcr.microsoft.com/devcontainers/base",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "upgradePackages": false
+            },
+            "rye": {
+                "uv": true
+            }
+        }
+    }
+}

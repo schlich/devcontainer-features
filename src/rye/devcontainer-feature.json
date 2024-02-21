@@ -1,10 +1,19 @@
 {
     "id": "rye",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
-        "ghcr.io/devcontainers/features/common-utils": {}
+        "ghcr.io/devcontainers/features/common-utils": {
+            "upgradePackages": false
+        }
+    },
+    "options": {
+        "uv": {
+            "type": "boolean",
+            "default": true,
+            "description": "uv enabled"
+        }
     },
     "containerEnv": {
         "RYE_INSTALL_OPTION": "--yes",
