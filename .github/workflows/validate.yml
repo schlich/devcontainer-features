@@ -1,6 +1,5 @@
 name: "Validate devcontainer-feature.json files"
 on:
-  push:
   pull_request:
 
 jobs:
