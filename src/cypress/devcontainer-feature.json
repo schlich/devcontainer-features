@@ -1,9 +1,13 @@
 {
     "id": "cypress",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Cypress",
     "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-    "installsAfter": [
-        "mcr.microsoft.com/devcontainers/typescript-node"
-    ]
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "upgradePackages": true
+        },
+        "ghcr.io/devcontainers/features/node": {}
+    },
+    "postAttachCommand": "npm install cypress --save-dev"
 }
