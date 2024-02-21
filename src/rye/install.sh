@@ -1,10 +1,4 @@
 #!/bin/sh
 set -e
 
-apt-get update
-apt-get upgrade -y
-apt-get install curl -y
-
-curl -sSf https://rye-up.com/get | bash
-
-echo "source '$RYE_HOME/.rye/env'" >> $HOME/.bashrc
+curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" RYE_HOME="/usr/local/share/rye" bash

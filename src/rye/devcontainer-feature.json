@@ -3,11 +3,11 @@
     "version": "1.0.2",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils": {}
+    },
     "containerEnv": {
         "RYE_INSTALL_OPTION": "--yes",
-        "RYE_HOME": "/opt/rye"
+        "RYE_HOME": "/usr/local/share/rye"
     }
 }
