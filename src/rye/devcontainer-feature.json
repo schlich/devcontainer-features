@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -9,5 +9,6 @@
     "containerEnv": {
         "RYE_INSTALL_OPTION": "--yes",
         "RYE_HOME": "/usr/local/share/rye"
-    }
+    },
+    "postCreateCommand": "echo '. /usr/local/share/rye/env' >> ~/.bashrc"
 }
