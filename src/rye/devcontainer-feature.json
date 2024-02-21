@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
