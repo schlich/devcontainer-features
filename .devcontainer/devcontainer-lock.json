@@ -1,0 +1,29 @@
+{
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/devcontainers-contrib/features/devcontainers-cli@sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55",
+      "integrity": "sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "2.9.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85",
+      "integrity": "sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "1.0.11",
+      "resolved": "ghcr.io/devcontainers/features/github-cli@sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312",
+      "integrity": "sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312"
+    },
+    "ghcr.io/edouard-lopez/devcontainer-features/bats:0": {
+      "version": "0.0.1",
+      "resolved": "ghcr.io/edouard-lopez/devcontainer-features/bats@sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a",
+      "integrity": "sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a"
+    },
+    "ghcr.io/prulloac/devcontainer-features/bun:1": {
+      "version": "1.0.1",
+      "resolved": "ghcr.io/prulloac/devcontainer-features/bun@sha256:0799dd082dd0b95c85ffeb91b02e24888ec2995592db6913c32da58bf0c5febb",
+      "integrity": "sha256:0799dd082dd0b95c85ffeb91b02e24888ec2995592db6913c32da58bf0c5febb"
+    }
+  }
+}
