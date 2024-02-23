@@ -5,8 +5,11 @@
         "ghcr.io/edouard-lopez/devcontainer-features/bats:0": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/prulloac/devcontainer-features/bun:1": {},
-        "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {}
+        "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
+        "ghcr.io/devcontainers-contrib/features/act:1": {},
+        "ghcr.io/devcontainers/features/nix:1": {}
     },
+    "postCreateCommand": "nix profile install nixpkgs#nushell --extra-experimental-features nix-command --extra-experimental-features flakes",
     "customizations": {
         "vscode": {
             "settings": {
