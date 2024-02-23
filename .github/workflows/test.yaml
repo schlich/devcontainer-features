@@ -27,6 +27,7 @@ jobs:
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} --preserve-test-containers
 
   test-arch:
+    name: "Run tests on Arch Linux"
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
