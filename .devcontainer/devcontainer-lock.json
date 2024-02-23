@@ -10,6 +10,11 @@
       "resolved": "ghcr.io/devcontainers-contrib/features/devcontainers-cli@sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55",
       "integrity": "sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55"
     },
+    "ghcr.io/devcontainers-contrib/features/starship:1": {
+      "version": "1.0.9",
+      "resolved": "ghcr.io/devcontainers-contrib/features/starship@sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6",
+      "integrity": "sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6"
+    },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "2.9.1",
       "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85",
