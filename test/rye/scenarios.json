@@ -29,5 +29,25 @@
         "features": {
             "rye": {}
         }
+    },
+    "rye_version_post_attach": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "postAttachCommand": "rye --version",
+        "remoteEnv": {
+            "PATH": "/usr/local/share/rye/shims:${containerEnv:PATH}"
+        },
+        "features": {
+            "rye": {}
+        }
+    },
+    "rye_version_post_start": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "postStartCommand": "rye --version",
+        "remoteEnv": {
+            "PATH": "/usr/local/share/rye/shims:${containerEnv:PATH}"
+        },
+        "features": {
+            "rye": {}
+        }
     }
 }

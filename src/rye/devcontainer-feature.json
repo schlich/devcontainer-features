@@ -19,5 +19,5 @@
         "RYE_INSTALL_OPTION": "--yes",
         "RYE_HOME": "/usr/local/share/rye"
     },
-    "postCreateCommand": "echo '. /usr/local/share/rye/env' >> ~/.profile"
+    "postStartCommand": "echo '. /usr/local/share/rye/env' >> ~/.profile"
 }
