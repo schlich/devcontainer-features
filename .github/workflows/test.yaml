@@ -24,4 +24,4 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
-        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} --preserve-test-containers
