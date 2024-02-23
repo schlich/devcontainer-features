@@ -6,7 +6,7 @@ source dev-container-features-test-lib
 
 if [ -f /usr/sbin/pacman ]; then
     pacman -Syu --noconfirm
-    pacman -Sy zsh --noconfirm
+    pacman -Sy zsh nushell --noconfirm
 fi
 
 check "env script exists" test -f /usr/local/share/rye/env
