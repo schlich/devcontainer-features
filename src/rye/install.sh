@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+apt-get update
+apt-get install -y curl
+
 if test -f /usr/local/share/rye/env; then
   echo "Rye already installed!"
 else
