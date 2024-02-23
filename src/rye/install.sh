@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+if [ -f /etc/debian_version ]; then
+  apt-get update
+  apt-get install -y curl
+fi
+
 if test -f /usr/local/share/rye/env; then
   echo "Rye already installed!"
 else

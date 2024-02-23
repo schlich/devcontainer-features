@@ -4,9 +4,9 @@
     "name": "Cypress",
     "description": "Fast, easy and reliable testing for anything that runs in a browser.",
     "dependsOn": {
-        "ghcr.io/devcontainers/features/node:1": {},
-        "ghcr.io/devcontainers/features/common-utils:2": {
-            "upgradePackages": false
-        }
-    }
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils:2"
+    ]
 }

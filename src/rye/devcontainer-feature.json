@@ -3,11 +3,9 @@
     "version": "1.1.2",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
-    "dependsOn": {
-        "ghcr.io/devcontainers/features/common-utils": {
-            "upgradePackages": false
-        }
-    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
     "options": {
         "uv": {
             "type": "boolean",
