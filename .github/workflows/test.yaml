@@ -15,8 +15,8 @@ jobs:
           - rye
           - cypress
         baseImage:
-          - mcr.microsoft.com/devcontainers/base:ubuntu
-          - mcr.microsoft.com/devcontainers/base:debian
+          - ubuntu
+          - debian
     steps:
       - uses: actions/checkout@v4
 
