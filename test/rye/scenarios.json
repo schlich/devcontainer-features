@@ -29,5 +29,12 @@
         "features": {
             "rye": {}
         }
+    },
+    "rye_sync_post_start": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "postStartCommand": "rye sync",
+        "features": {
+            "rye": {}
+        }
     }
 }
