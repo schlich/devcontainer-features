@@ -8,6 +8,7 @@ on:
 
 jobs:
   test-debian:
+    name: "Test on Debian Linux"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -23,6 +24,7 @@ jobs:
       - name: "Generating Debian tests for '${{ matrix.features }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i debian --preserve-test-containers
   test-ubuntu:
+    name: "Test on Ubuntu Linux"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -39,8 +41,8 @@ jobs:
         run: devcontainer features test -f ${{ matrix.features }} -i ubuntu --preserve-test-containers
 
   test-arch:
-    name: "Run tests on Arch Linux"
-    runs-on: self-hosted
+    name: "Test on Arch Linux"
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -48,4 +50,6 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: "Test Arch Linux"
-        run: devcontainer features test -i archlinux -f rye --preserve-test-containers
+        run: |
+          set -e
+          devcontainer features test -i archlinux -f rye --preserve-test-containers
