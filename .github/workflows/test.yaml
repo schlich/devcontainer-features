@@ -25,3 +25,14 @@ jobs:
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} --preserve-test-containers
+
+  test-arch:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Test Arch Linux"
+        run: devcontainer features test -i archlinux --preserve-test-containers
