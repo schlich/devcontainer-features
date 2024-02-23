@@ -35,4 +35,4 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: "Test Arch Linux"
-        run: devcontainer features test -i archlinux --preserve-test-containers
+        run: devcontainer features test -i archlinux -f rye --preserve-test-containers
