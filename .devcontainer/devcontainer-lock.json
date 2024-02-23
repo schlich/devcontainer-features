@@ -15,6 +15,11 @@
       "resolved": "ghcr.io/devcontainers-contrib/features/starship@sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6",
       "integrity": "sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6"
     },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "2.9.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85",
+      "integrity": "sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85"
+    },
     "ghcr.io/devcontainers/features/github-cli:1": {
       "version": "1.0.11",
       "resolved": "ghcr.io/devcontainers/features/github-cli@sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312",
