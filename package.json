@@ -7,6 +7,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "test": "devcontainer features test"
+    "test": "devcontainer features test",
+    "test:rye": "devcontainer features test -f rye",
+    "test:cypress": "devcontainer features test -f cypress"
   }
 }
