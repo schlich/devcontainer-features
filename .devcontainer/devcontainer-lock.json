@@ -15,11 +15,6 @@
       "resolved": "ghcr.io/devcontainers-contrib/features/starship@sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6",
       "integrity": "sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6"
     },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "2.9.1",
-      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85",
-      "integrity": "sha256:8e2aba2b8e21981b6adce23a938be917b346018b5d115e07edd95f2dca898e85"
-    },
     "ghcr.io/devcontainers/features/github-cli:1": {
       "version": "1.0.11",
       "resolved": "ghcr.io/devcontainers/features/github-cli@sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312",
@@ -34,11 +29,6 @@
       "version": "0.0.1",
       "resolved": "ghcr.io/edouard-lopez/devcontainer-features/bats@sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a",
       "integrity": "sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a"
-    },
-    "ghcr.io/prulloac/devcontainer-features/bun:1": {
-      "version": "1.0.1",
-      "resolved": "ghcr.io/prulloac/devcontainer-features/bun@sha256:0799dd082dd0b95c85ffeb91b02e24888ec2995592db6913c32da58bf0c5febb",
-      "integrity": "sha256:0799dd082dd0b95c85ffeb91b02e24888ec2995592db6913c32da58bf0c5febb"
     }
   }
 }
