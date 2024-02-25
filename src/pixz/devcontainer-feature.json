@@ -1,0 +1,11 @@
+{
+    "id": "pixz",
+    "version": "0.1.0",
+    "name": "Pixz",
+    "description": "A parallel, indexed xz compressor",
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+            "packages": "pkg-config,libpthread-stubs0-dev,build-essential,wget,liblzma-dev,libarchive-dev"
+        }
+    }
+}
