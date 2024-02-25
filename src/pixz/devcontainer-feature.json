@@ -1,0 +1,9 @@
+{
+    "id": "pixz",
+    "version": "0.1.0",
+    "name": "Pixz",
+    "description": "A parallel, indexed xz compressor",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    }
+}
