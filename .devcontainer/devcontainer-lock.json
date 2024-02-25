@@ -34,6 +34,11 @@
       "version": "0.0.1",
       "resolved": "ghcr.io/edouard-lopez/devcontainer-features/bats@sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a",
       "integrity": "sha256:8acd020fc45ebacdd399a29977c4d22cad56b5c95c43cdf2ae061f0e755aea7a"
+    },
+    "ghcr.io/lee-orr/rusty-dev-containers/helix:0": {
+      "version": "0.1.0",
+      "resolved": "ghcr.io/lee-orr/rusty-dev-containers/helix@sha256:5095926ed2ec59b39ee790062231a93fa587a0ec8388da2b3a478861618f35b7",
+      "integrity": "sha256:5095926ed2ec59b39ee790062231a93fa587a0ec8388da2b3a478861618f35b7"
     }
   }
 }
