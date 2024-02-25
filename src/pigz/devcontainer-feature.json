@@ -1,0 +1,11 @@
+{
+    "id": "pigz",
+    "version": "0.1.0",
+    "name": "Pigz",
+    "description": "A parallel implementation of gzip for modern multi-processor, multi-core machines",
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+            "packages": "wget,build-essential,zlib1g-dev"
+        }
+    }
+}
