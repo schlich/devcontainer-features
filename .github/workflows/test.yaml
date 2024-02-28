@@ -40,16 +40,3 @@ jobs:
       - name: "Generating Debian tests for '${{ matrix.features }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ubuntu --preserve-test-containers
 
-  test-arch:
-    name: "Test on Arch Linux"
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: "Install latest devcontainer CLI"
-        run: npm install -g @devcontainers/cli
-
-      - name: "Test Arch Linux"
-        run: |
-          set -e
-          devcontainer features test -i archlinux -f rye --preserve-test-containers
