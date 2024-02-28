@@ -3,9 +3,9 @@
     "version": "1.1.2",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
+    },
     "options": {
         "uv": {
             "type": "boolean",
@@ -15,7 +15,7 @@
     },
     "containerEnv": {
         "RYE_INSTALL_OPTION": "--yes",
-        "RYE_HOME": "/usr/local/share/rye"
-    },
-    "postStartCommand": "echo '. /usr/local/share/rye/env' >> ~/.profile"
+        "RYE_HOME": "/usr/local/lib/rye",
+        "PATH": "/usr/local/lib/rye/shims:${PATH}"
+    }
 }
