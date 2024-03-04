@@ -17,6 +17,12 @@ A Hassle-Free Python Experience
 |-----|-----|-----|-----|
 | uv | uv enabled | boolean | true |
 
+## Customizations
+
+### VS Code Extensions
+
+- `ms-python.python`
+
 
 
 ---
