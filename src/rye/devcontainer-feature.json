@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -17,5 +17,15 @@
         "RYE_INSTALL_OPTION": "--yes",
         "RYE_HOME": "/usr/local/lib/rye",
         "PATH": "/usr/local/lib/rye/shims:${PATH}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/lib/rye/shims/python"
+            }
+        }
     }
 }
