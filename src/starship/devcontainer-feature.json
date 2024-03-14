@@ -1,6 +1,7 @@
 {
     "id": "starship",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "name": "Starship",
-    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+    "postCreateCommand": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc"
 }
