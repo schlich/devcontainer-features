@@ -6,6 +6,7 @@
     "dependsOn": {
         "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
     },
+    "installsAfter": ["ghcr.io/devcontainers/features/python:1"],
     "options": {
         "uv": {
             "type": "boolean",
