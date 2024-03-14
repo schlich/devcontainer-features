@@ -1,6 +1,6 @@
 {
     "id": "starship",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "name": "Starship",
     "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
     "dependsOn": {
