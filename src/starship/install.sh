@@ -1,4 +1,4 @@
 #!/bin/sh
 
-curl -sS https://starship.rs/install.sh | sh --yes
+apt-get install -y curl
 curl -sS https://starship.rs/install.sh | sh -s -- -y
