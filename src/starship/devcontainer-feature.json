@@ -1,0 +1,9 @@
+{
+    "id": "starship",
+    "version": "0.1.0",
+    "name": "Starship",
+    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
+    }
+}
