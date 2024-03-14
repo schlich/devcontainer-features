@@ -5,15 +5,15 @@
       "resolved": "ghcr.io/devcontainers-contrib/features/act@sha256:3ec9cb495f2b7daba5af1657d40604815bc38af7e0c05a0578eae1c979d4b73a",
       "integrity": "sha256:3ec9cb495f2b7daba5af1657d40604815bc38af7e0c05a0578eae1c979d4b73a"
     },
+    "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {
+      "version": "1.0.16",
+      "resolved": "ghcr.io/devcontainers-contrib/features/curl-apt-get@sha256:3ca63fc9bee8e7b691cfbe376204f57ed091552151805a172f6a5d0c3d7936de",
+      "integrity": "sha256:3ca63fc9bee8e7b691cfbe376204f57ed091552151805a172f6a5d0c3d7936de"
+    },
     "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {
       "version": "1.0.0",
       "resolved": "ghcr.io/devcontainers-contrib/features/devcontainers-cli@sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55",
       "integrity": "sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55"
-    },
-    "ghcr.io/devcontainers-contrib/features/starship:1": {
-      "version": "1.0.9",
-      "resolved": "ghcr.io/devcontainers-contrib/features/starship@sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6",
-      "integrity": "sha256:4153cda991512b68c670fc92db017c22f57eb55142525b231050549394772ce6"
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "2.9.1",
@@ -39,6 +39,14 @@
       "version": "0.1.0",
       "resolved": "ghcr.io/lee-orr/rusty-dev-containers/helix@sha256:5095926ed2ec59b39ee790062231a93fa587a0ec8388da2b3a478861618f35b7",
       "integrity": "sha256:5095926ed2ec59b39ee790062231a93fa587a0ec8388da2b3a478861618f35b7"
+    },
+    "ghcr.io/schlich/devcontainer-features/starship:0": {
+      "version": "0.1.0",
+      "resolved": "ghcr.io/schlich/devcontainer-features/starship@sha256:ebdf11c592c73c7e6665c5239b0758a01a03169a83726882aac79ea99a554fc0",
+      "integrity": "sha256:ebdf11c592c73c7e6665c5239b0758a01a03169a83726882aac79ea99a554fc0",
+      "dependsOn": [
+        "ghcr.io/devcontainers-contrib/features/curl-apt-get:1"
+      ]
     }
   }
 }
