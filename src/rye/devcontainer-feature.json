@@ -1,11 +1,9 @@
 {
     "id": "rye",
-    "version": "1.1.4",
+    "version": "1.1.8",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
-    "dependsOn": {
-        "ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {}
-    },
+    "installsAfter": ["ghcr.io/devcontainers/features/python:1"],
     "options": {
         "uv": {
             "type": "boolean",

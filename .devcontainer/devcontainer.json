@@ -10,7 +10,7 @@
             "extraNixConfig": "experimental-features = nix-command flakes",
             "package": "nushell"
         },
-        "ghcr.io/devcontainers-contrib/features/starship:1": {},
+        "ghcr.io/schlich/devcontainer-features/starship:0": {},
         "ghcr.io/lee-orr/rusty-dev-containers/helix:0": {}
     },
     "customizations": {
