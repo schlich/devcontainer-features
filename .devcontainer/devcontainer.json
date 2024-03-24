@@ -3,9 +3,10 @@
     "features": {
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
-        "ghcr.io/schlich/devcontainer-features/starship:0": {}
+        "ghcr.io/schlich/devcontainer-features/starship:0": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/guiyomh/features/just:0": {}
     },
-    "postCreateCommand": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc",
     "customizations": {
         "vscode": {
             "settings": {

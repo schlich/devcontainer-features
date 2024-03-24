@@ -1,0 +1,29 @@
+{
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/devcontainers-contrib/features/devcontainers-cli@sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55",
+      "integrity": "sha256:45a8ee482161d8535545cf1daa090d56edd035b5187e4fd45dcfd1e647943f55"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "2.10.1",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:440bdb81cf8af43f3e922450d33db9775c1097340557a5b7b6fe705bc758c5ef",
+      "integrity": "sha256:440bdb81cf8af43f3e922450d33db9775c1097340557a5b7b6fe705bc758c5ef"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "1.0.11",
+      "resolved": "ghcr.io/devcontainers/features/github-cli@sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312",
+      "integrity": "sha256:464564228ccdd6028f01f8a62a3cfbaf76e9ba7953b29ac0e53ba2c262604312"
+    },
+    "ghcr.io/guiyomh/features/just:0": {
+      "version": "0.1.0",
+      "resolved": "ghcr.io/guiyomh/features/just@sha256:8311dff976bd153a54a879021353a7e149963e580022b25af49c45cfc5f13bec",
+      "integrity": "sha256:8311dff976bd153a54a879021353a7e149963e580022b25af49c45cfc5f13bec"
+    },
+    "ghcr.io/schlich/devcontainer-features/starship:0": {
+      "version": "0.1.5",
+      "resolved": "ghcr.io/schlich/devcontainer-features/starship@sha256:328c5de9cb33c1c410322730cf0d78a430bbfc120b3fa7d7435d604b2fc5fb4e",
+      "integrity": "sha256:328c5de9cb33c1c410322730cf0d78a430bbfc120b3fa7d7435d604b2fc5fb4e"
+    }
+  }
+}
