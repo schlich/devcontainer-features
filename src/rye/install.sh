@@ -1,14 +1,15 @@
 #!/bin/sh
 set -e
 
-if test -f /usr/local/lib/rye/env; then
-  echo "Rye already installed!"
+if rye --version; then
+  echo "$(rye --version)"
 else
   if python; then
-    curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" RYE_HOME="/usr/local/lib/rye" RYE_TOOLCHAIN="$(which python)" bash
+    curl -sSf https://rye-up.com/get | RYE_TOOLCHAIN="$(which python)" RYE_VERSION=0.30.0 bash
   else
-    curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" RYE_HOME="/usr/local/lib/rye" bash
+    curl -sSf https://rye-up.com/get | RYE_VERSION=0.30.0 bash
   fi
 fi
+
 
 /usr/local/lib/rye/shims/rye config --set-bool behavior.use-uv=${UV}
