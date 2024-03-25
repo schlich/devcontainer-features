@@ -16,6 +16,7 @@
     },
     "containerEnv": {
         "RYE_INSTALL_OPTION": "--yes",
+        "RYE_NO_AUTO_INSTALL": "1",
         "RYE_HOME": "/usr/local/lib/rye",
         "PATH": "/usr/local/lib/rye/shims:${PATH}"
     },
