@@ -23,6 +23,7 @@ A Hassle-Free Python Experience
 
 - `ms-python.python`
 - `charliermarsh.ruff`
+- `tamasfe.even-better-toml`
 
 
 
