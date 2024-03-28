@@ -7,6 +7,16 @@ on:
   workflow_dispatch:
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Validate devcontainer-feature.json files"
+        uses: devcontainers/action@v1
+        with:
+          validate-only: "true"
+          base-path-to-features: "./src"
   test-debian:
     name: "Test on Debian Linux"
     runs-on: ubuntu-latest
@@ -42,6 +52,9 @@ jobs:
   publish:
     name: "Publish Features & Update Documentation"
     if: ${{ github.ref == 'refs/heads/main' }}
+    needs:
+      - test-ubuntu
+      - test-debian
     runs-on: ubuntu-latest
     permissions:
       contents: write
