@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.1.13",
+    "version": "1.1.14",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -25,10 +25,28 @@
         "vscode": {
             "extensions": [
                 "ms-python.python",
-                "charliermarsh.ruff"
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml"
             ],
             "settings": {
-                "python.defaultInterpreterPath": ".venv/bin/python"
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
+                "python.analysis.typeCheckingMode": "basic",
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit",
+                        "source.organizeImports": "explicit"
+                    },
+                    "editor.defaultFormatter": "charliermarsh.ruff"
+                },
+                "notebook.formatOnSave.enabled": true,
+                "notebook.codeActionsOnSave": {
+                    "notebook.source.fixAll": "explicit",
+                    "notebook.source.organizeImports": "explicit"
+                }
             }
         }
     }

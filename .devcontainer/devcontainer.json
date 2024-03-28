@@ -1,12 +1,12 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "image": "mcr.microsoft.com/devcontainers/base",
     "features": {
-        "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/guiyomh/features/just:0": {},
-        "ghcr.io/devcontainers-contrib/features/act:1": {},
-        "ghcr.io/devcontainers/features/nix:1": {
+        "ghcr.io/devcontainers/features/github-cli": {},
+        "ghcr.io/devcontainers-contrib/features/devcontainers-cli": {},
+        "ghcr.io/devcontainers/features/docker-in-docker": {},
+        "ghcr.io/guiyomh/features/just": {},
+        "ghcr.io/devcontainers-contrib/features/act": {},
+        "ghcr.io/devcontainers/features/nix": {
             "extraNixConfig": "experimental-features = nix-command flakes",
             "package": "nushell"
         },
