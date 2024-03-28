@@ -12,11 +12,6 @@
             "type": "boolean",
             "default": true,
             "description": "uv enabled"
-        },
-        "ruffOnSave": {
-            "type": "boolean",
-            "default": true,
-            "description": "Enables autoformat, autofix, autoorganize of imports on save."
         }
     },
     "containerEnv": {
@@ -39,7 +34,6 @@
                 "python.testing.pytestEnabled": true,
                 "python.analysis.typeCheckingMode": "basic",
                 "python.terminal.activateEnvInCurrentTerminal": true,
-                "editor.formatOnSave": true,
                 "[python]": {
                     "editor.formatOnSave": true,
                     "editor.codeActionsOnSave": {
@@ -50,8 +44,8 @@
                 },
                 "notebook.formatOnSave.enabled": true,
                 "notebook.codeActionsOnSave": {
-                  "notebook.source.fixAll": "explicit",
-                  "notebook.source.organizeImports": "explicit"
+                    "notebook.source.fixAll": "explicit",
+                    "notebook.source.organizeImports": "explicit"
                 }
             }
         }
