@@ -22,6 +22,7 @@ A Hassle-Free Python Experience
 ### VS Code Extensions
 
 - `ms-python.python`
+- `charliermarsh.ruff`
 
 
 
