@@ -6,7 +6,7 @@
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils": {}
     },
-    "installsAfter": ["ghcr.io/devcontainers/features/python:1"],
+    "installsAfter": ["ghcr.io/devcontainers/features/python"],
     "options": {
         "uv": {
             "type": "boolean",
@@ -20,13 +20,15 @@
         "RYE_HOME": "/usr/local/lib/rye",
         "PATH": "/usr/local/lib/rye/shims:${PATH}"
     },
+    "postCreateCommand": "echo '. \"$HOME/.rye/env\"' >> ~/.profile",
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "charliermarsh.ruff"
             ],
             "settings": {
-                "python.defaultInterpreterPath": "/usr/local/lib/rye/shims/python"
+                "python.defaultInterpreterPath": ".venv/bin/python"
             }
         }
     }
