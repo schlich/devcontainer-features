@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.1.14",
+    "version": "1.2.0",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -15,12 +15,12 @@
         }
     },
     "containerEnv": {
-        "RYE_INSTALL_OPTION": "--yes",
         "RYE_NO_AUTO_INSTALL": "1",
         "RYE_HOME": "/usr/local/lib/rye",
         "PATH": "/usr/local/lib/rye/shims:${PATH}"
     },
     "postCreateCommand": "echo '. \"$HOME/.rye/env\"' >> ~/.profile",
+    "postAttachCommand": "if [ -f pyproject.toml ]; then rye sync; fi",
     "customizations": {
         "vscode": {
             "extensions": [
