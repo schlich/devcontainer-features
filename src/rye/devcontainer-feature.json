@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -20,7 +20,7 @@
         "PATH": "/usr/local/lib/rye/shims:${PATH}"
     },
     "postCreateCommand": "echo '. \"$HOME/.rye/env\"' >> ~/.profile",
-    "postAttachCommand": "if [ -f pyproject.toml ]; then rye sync; fi",
+    "postAttachCommand": "if [ -f pyproject.toml ]; then if [ -f requirements-dev.lock ]; then rye sync --no-lock; else rye sync; fi; fi",
     "customizations": {
         "vscode": {
             "extensions": [
