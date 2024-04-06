@@ -22,7 +22,6 @@ A Hassle-Free Python Experience
 ### VS Code Extensions
 
 - `ms-python.python`
-- `charliermarsh.ruff`
 - `tamasfe.even-better-toml`
 
 
