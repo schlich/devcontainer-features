@@ -1,6 +1,6 @@
 {
     "id": "rye",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
@@ -25,7 +25,6 @@
         "vscode": {
             "extensions": [
                 "ms-python.python",
-                "charliermarsh.ruff",
                 "tamasfe.even-better-toml"
             ],
             "settings": {
