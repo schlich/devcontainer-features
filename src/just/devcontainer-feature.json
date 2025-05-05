@@ -1,7 +1,20 @@
 {
     "id": "just",
-    "version": "0.1.5",
-    "name": "Starship",
-    "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
-    "postCreateCommand": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc"
+    "version": "0.1.0",
+    "name": "just",
+    "description": "Installs just, just is a handy way to save and run project-specific commands on justfile.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "1"
+            ],
+            "default": "latest",
+            "description": "Select version of just."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }
