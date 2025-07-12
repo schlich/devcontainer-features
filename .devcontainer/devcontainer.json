@@ -2,9 +2,11 @@
     "image": "mcr.microsoft.com/devcontainers/base",
     "features": {
         "ghcr.io/devcontainers/features/github-cli": {},
-        "ghcr.io/devcontainers-extra/features/devcontainers-cli": {},
-        "ghcr.io/guiyomh/features/just": {},
-        "ghcr.io/schlich/devcontainer-features/starship": {}
+        "ghcr.io/devcontainers-extra/features/devcontainers-cli:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker": {},
+        "ghcr.io/guiyomh/features/just": {}
     },
     "customizations": {
         "vscode": {
