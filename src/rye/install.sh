@@ -12,4 +12,4 @@ else
 fi
 
 
-/usr/local/lib/rye/shims/rye config --set-bool behavior.use-uv=${UV}
+/usr/local/lib/rye/shims/rye config
