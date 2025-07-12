@@ -1,2 +1,2 @@
-test:
-    devcontainer features test -f rye
+test *args:
+    devcontainer features test -p . --log-level=debug {{ args }}

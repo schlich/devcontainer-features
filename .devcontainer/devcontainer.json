@@ -2,16 +2,9 @@
     "image": "mcr.microsoft.com/devcontainers/base",
     "features": {
         "ghcr.io/devcontainers/features/github-cli": {},
-        "ghcr.io/devcontainers-contrib/features/devcontainers-cli": {},
-        "ghcr.io/devcontainers/features/docker-in-docker": {},
+        "ghcr.io/devcontainers-extra/features/devcontainers-cli": {},
         "ghcr.io/guiyomh/features/just": {},
-        "ghcr.io/devcontainers-contrib/features/act": {},
-        "ghcr.io/devcontainers/features/nix": {
-            "extraNixConfig": "experimental-features = nix-command flakes",
-            "package": "nushell"
-        },
-        "ghcr.io/schlich/devcontainer-features/starship": {},
-        "ghcr.io/schlich/devcontainer-features/helix": {}
+        "ghcr.io/schlich/devcontainer-features/starship": {}
     },
     "customizations": {
         "vscode": {
@@ -26,7 +19,6 @@
                 ]
             },
             "extensions": [
-                "mads-hartmann.bash-ide-vscode",
                 "GitHub.vscode-github-actions",
                 "GitHub.vscode-pull-request-github"
             ]

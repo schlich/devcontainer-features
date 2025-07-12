@@ -1,0 +1,18 @@
+{
+    "id": "jujutsu",
+    "version": "0.1.0",
+    "name": "just",
+    "description": "A version control system.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
