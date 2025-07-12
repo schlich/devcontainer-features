@@ -11,7 +11,11 @@ Fast, easy and reliable testing for anything that runs in a browser.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | - | string | latest |
 
 
 
