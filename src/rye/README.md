@@ -11,12 +11,6 @@ A Hassle-Free Python Experience
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| uv | uv enabled | boolean | true |
-
 ## Customizations
 
 ### VS Code Extensions
