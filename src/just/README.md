@@ -1,7 +1,7 @@
 
-# Just (just)
+# just (just)
 
-Just a command runner. `just` is a handy way to save and run project-specific commands.
+Installs just, just is a handy way to save and run project-specific commands on justfile.
 
 ## Example Usage
 
@@ -11,7 +11,11 @@ Just a command runner. `just` is a handy way to save and run project-specific co
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | Select version of just. | string | latest |
 
 
 
