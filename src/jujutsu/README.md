@@ -1,5 +1,5 @@
 
-# Jujutsu
+# jujutsu (jujutsu)
 
 A version control system.
 
