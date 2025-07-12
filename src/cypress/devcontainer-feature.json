@@ -6,6 +6,12 @@
     "dependsOn": {
         "ghcr.io/devcontainers/features/node:1": {}
     },
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest"
+        }
+    },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils:2"
     ]
