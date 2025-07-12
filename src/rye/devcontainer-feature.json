@@ -1,19 +1,15 @@
 {
     "id": "rye",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "name": "Rye",
     "description": "A Hassle-Free Python Experience",
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils": {}
     },
-    "installsAfter": ["ghcr.io/devcontainers/features/python"],
-    "options": {
-        "uv": {
-            "type": "boolean",
-            "default": true,
-            "description": "uv enabled"
-        }
-    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/python"
+    ],
+    "options": {},
     "containerEnv": {
         "RYE_NO_AUTO_INSTALL": "1",
         "RYE_HOME": "/usr/local/lib/rye",
