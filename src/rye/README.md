@@ -11,6 +11,12 @@ A Hassle-Free Python Experience
 }
 ```
 
+## Options
+
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+
+
 ## Customizations
 
 ### VS Code Extensions
