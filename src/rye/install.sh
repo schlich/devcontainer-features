@@ -10,6 +10,3 @@ else
     curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash
   fi
 fi
-
-
-/usr/local/lib/rye/shims/rye config
