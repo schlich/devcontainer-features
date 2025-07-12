@@ -1,5 +1,5 @@
 
-# just (jujutsu)
+# Jujutsu
 
 A version control system.
 

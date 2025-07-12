@@ -1,2 +1,2 @@
 test *args:
-    devcontainer features test -p . --log-level=debug {{ args }}
+    devcontainer features test -p . {{ args }}

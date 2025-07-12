@@ -1,7 +1,7 @@
 {
     "id": "jujutsu",
     "version": "0.1.0",
-    "name": "just",
+    "name": "jujutsu",
     "description": "A version control system.",
     "options": {
         "version": {
@@ -12,7 +12,9 @@
             "default": "latest"
         }
     },
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ]
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "version": "latest"
+        }
+    }
 }
