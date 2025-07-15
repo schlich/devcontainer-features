@@ -6,7 +6,11 @@
             "version": "latest"
         },
         "ghcr.io/devcontainers/features/docker-in-docker": {},
-        "ghcr.io/guiyomh/features/just": {}
+        "ghcr.io/guiyomh/features/just": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
+        "ghcr.io/guiyomh/features/just:0": {}
     },
     "customizations": {
         "vscode": {
