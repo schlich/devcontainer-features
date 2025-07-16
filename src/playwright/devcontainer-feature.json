@@ -1,0 +1,9 @@
+{
+    "id": "playwright",
+    "version": "0.1.0",
+    "name": "Playwright",
+    "description": "Playwright enables reliable end-to-end testing for modern web apps.",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    }
+}
