@@ -1,6 +1,6 @@
 {
   "id": "playwright",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "Playwright",
   "description": "Playwright enables reliable end-to-end testing for modern web apps.",
   "dependsOn": {
