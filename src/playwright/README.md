@@ -11,7 +11,11 @@ Playwright enables reliable end-to-end testing for modern web apps.
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| browsers | A SPACE-separated list of browsers to install | string | - |
 
 
 
