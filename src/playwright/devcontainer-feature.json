@@ -10,20 +10,8 @@
   "options": {
     "browsers": {
       "type": "string",
-      "description": "A comma-separated list of browsers to install",
-      "proposals": [
-        "chromium",
-        "chromium-headless-shell",
-        "chromium-tip-of-tree-headless-shell",
-        "chrome",
-        "chrome-beta",
-        "msedge",
-        "msedge-beta",
-        "msedge-dev",
-        "_bidiChromium",
-        "firefox",
-        "webkit"
-      ]
+      "description": "A SPACE-separated list of browsers to install",
+      "default": ""
     }
   }
 }
