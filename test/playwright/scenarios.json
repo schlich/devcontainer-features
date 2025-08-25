@@ -1,0 +1,18 @@
+{
+  "select_single_browser": {
+    "image": "ubuntu:focal",
+    "features": {
+      "playwright": {
+        "browsers": "firefox"
+      }
+    }
+  },
+  "select_multiple_browsers": {
+    "image": "ubuntu:focal",
+    "features": {
+      "playwright": {
+        "browsers": "firefox chromium"
+      }
+    }
+  }
+}

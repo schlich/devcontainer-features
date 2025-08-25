@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npx playwright install --with-deps
+npx playwright install --with-deps ${BROWSERS}

@@ -1,9 +1,29 @@
 {
-    "id": "playwright",
-    "version": "0.1.0",
-    "name": "Playwright",
-    "description": "Playwright enables reliable end-to-end testing for modern web apps.",
-    "dependsOn": {
-        "ghcr.io/devcontainers/features/node:1": {}
+  "id": "playwright",
+  "version": "0.1.0",
+  "name": "Playwright",
+  "description": "Playwright enables reliable end-to-end testing for modern web apps.",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "options": {
+    "browsers": {
+      "type": "string",
+      "description": "A comma-separated list of browsers to install",
+      "proposals": [
+        "chromium",
+        "chromium-headless-shell",
+        "chromium-tip-of-tree-headless-shell",
+        "chrome",
+        "chrome-beta",
+        "msedge",
+        "msedge-beta",
+        "msedge-dev",
+        "_bidiChromium",
+        "firefox",
+        "webkit"
+      ]
     }
+  }
 }
