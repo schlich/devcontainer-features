@@ -33,7 +33,7 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: "Generating Debian tests for '${{ matrix.features }}'"
-        run: devcontainer features test -f ${{ matrix.features }} -i debian --preserve-test-containers
+        run: devcontainer features test -f ${{ matrix.features }} -i debian:bookworm --preserve-test-containers
   test-ubuntu:
     needs: validate
     name: "Test on Ubuntu Linux"
