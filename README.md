@@ -12,6 +12,7 @@ A collection of devcontainer features.
 | [helix](./src/helix) | Installs the Helix code editor from source binaries. |
 | [helmfile](./src/helmfile) | Helmfile commands for deploying Helm sheets. |
 | [jenkins-x](./src/jenkins-x) | CI/CD for Kubernetes |
+| [jujutsu](./src/jujutsu) | A version control system |
 | [just](./src/just) | Just a command runner. `just` is a handy way to save and run project-specific commands. |
 | [node-exporter](./src/node-exporter) | Prometheus Node Exporter. |
 | [openslides](./src/openslides) | The digital motion and assembly system. |
