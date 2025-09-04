@@ -5,7 +5,6 @@
         "ghcr.io/devcontainers-extra/features/devcontainers-cli:1": {
             "version": "latest"
         },
-        "ghcr.io/guiyomh/features/just": {},
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
