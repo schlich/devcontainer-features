@@ -5,10 +5,10 @@
       "resolved": "ghcr.io/devcontainers-extra/features/devcontainers-cli@sha256:855f5c6a10d1d1353fc3127216171653527f2dadaa50bee3ef4c55a261e19749",
       "integrity": "sha256:855f5c6a10d1d1353fc3127216171653527f2dadaa50bee3ef4c55a261e19749"
     },
-    "ghcr.io/devcontainers/features/docker-in-docker": {
-      "version": "2.12.2",
-      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:842d2ed40827dc91b95ef727771e170b0e52272404f00dba063cee94eafac4bb",
-      "integrity": "sha256:842d2ed40827dc91b95ef727771e170b0e52272404f00dba063cee94eafac4bb"
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "2.12.3",
+      "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:c36ff66a35d1c40409a0fc1a7995616eaaa76574953b6ed675d8622e2d0bbcc5",
+      "integrity": "sha256:c36ff66a35d1c40409a0fc1a7995616eaaa76574953b6ed675d8622e2d0bbcc5"
     },
     "ghcr.io/devcontainers/features/github-cli": {
       "version": "1.0.14",
@@ -20,7 +20,7 @@
       "resolved": "ghcr.io/eitsupi/devcontainer-features/nushell@sha256:c35933c78369ee4a9936041c75a3363414c5fd332d95a2b2c7c4cb1b179cd176",
       "integrity": "sha256:c35933c78369ee4a9936041c75a3363414c5fd332d95a2b2c7c4cb1b179cd176"
     },
-    "ghcr.io/guiyomh/features/just": {
+    "ghcr.io/guiyomh/features/just:0": {
       "version": "0.1.0",
       "resolved": "ghcr.io/guiyomh/features/just@sha256:8311dff976bd153a54a879021353a7e149963e580022b25af49c45cfc5f13bec",
       "integrity": "sha256:8311dff976bd153a54a879021353a7e149963e580022b25af49c45cfc5f13bec"
