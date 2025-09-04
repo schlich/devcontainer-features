@@ -45,6 +45,7 @@ jobs:
           - rye
           - cypress
           - playwright
+          - starship
     steps:
       - uses: actions/checkout@v4
 
