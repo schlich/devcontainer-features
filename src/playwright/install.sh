@@ -35,5 +35,6 @@ fi
 if [ "${USERNAME}" = "root" ]; then
     npx playwright install --with-deps ${BROWSERS}
 else
-    su ${USERNAME} -c "npx playwright install --with-deps ${BROWSERS}"
+    # Preserve PATH and NODE environment when switching users
+    su ${USERNAME} -c "PATH=\"${PATH}\" npx playwright install --with-deps ${BROWSERS}"
 fi
