@@ -14,5 +14,13 @@
         "browsers": "firefox chromium"
       }
     }
+  },
+  "test_user_install": {
+    "image": "ubuntu:focal",
+    "features": {
+      "playwright": {
+        "browsers": "chromium"
+      }
+    }
   }
 }
