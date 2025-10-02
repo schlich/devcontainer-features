@@ -21,6 +21,7 @@ The `scripts/bump-version.nu` script is the primary tool for version bumping, wr
 - **Type Safety**: Better error handling and data validation
 - **Modern Syntax**: Clean, readable code that's easier to maintain
 - **Performance**: Efficient data processing and manipulation
+- **Plugin Support**: Can use official `nu_plugin_inc` for semantic versioning
 
 #### Prerequisites
 
@@ -31,6 +32,17 @@ cargo install nu
 
 # Or download from https://github.com/nushell/nushell/releases
 ```
+
+**Optional but recommended**: Install the `inc` plugin for enhanced functionality:
+```bash
+# Install the plugin
+cargo install nu_plugin_inc
+
+# Register it with nushell
+nu -c "plugin add ~/.cargo/bin/nu_plugin_inc"
+```
+
+The script works with or without the plugin - it will automatically use the plugin if available and fall back to a custom implementation otherwise.
 
 #### Usage
 

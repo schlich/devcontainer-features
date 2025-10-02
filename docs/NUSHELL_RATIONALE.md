@@ -77,9 +77,24 @@ Nushell provides clearer, more actionable error messages with line numbers and c
 
 ## Note on `inc` Command
 
-Nushell had an `inc` command in earlier versions (pre-0.80) that could increment semantic version strings directly. However, this command is not available in current versions (0.107.0+). 
+Nushell's `inc` functionality for incrementing semantic version strings is now available as an official plugin: `nu_plugin_inc`.
 
-Our implementation uses a custom `bump_semver` function that provides the same functionality without depending on deprecated features. See [NUSHELL_INC_COMMAND.md](./NUSHELL_INC_COMMAND.md) for details.
+**Our implementation uses a hybrid approach:**
+1. First attempts to use `nu_plugin_inc` if installed
+2. Falls back to custom implementation if plugin is not available
+
+This provides the best of both worlds:
+- Uses official plugin when available (recommended)
+- Guarantees functionality even without the plugin
+- No manual configuration needed
+
+**To install the plugin:**
+```bash
+cargo install nu_plugin_inc
+nu -c "plugin add ~/.cargo/bin/nu_plugin_inc"
+```
+
+See [NUSHELL_INC_COMMAND.md](./NUSHELL_INC_COMMAND.md) for complete details on plugin installation and usage.
 
 ## Installation
 

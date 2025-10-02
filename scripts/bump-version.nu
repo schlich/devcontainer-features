@@ -117,13 +117,29 @@ def bump_feature_version [
 }
 
 # Bump a semantic version string
-# Note: Nushell had an `inc` command in earlier versions (pre-0.80) that could
-# increment semver strings, but it's not available in current versions (0.107+).
-# This custom implementation provides the same functionality.
+# Uses the nu_plugin_inc if available, otherwise falls back to custom implementation
 def bump_semver [
     version: string
     bump_type: string
 ]: nothing -> string {
+    # Try to use inc plugin if available
+    let inc_result = try {
+        match $bump_type {
+            "major" => { $version | inc --major }
+            "minor" => { $version | inc --minor }
+            "patch" => { $version | inc --patch }
+            _ => { error make {msg: $"Error: Invalid bump type: ($bump_type)"} }
+        }
+    } catch {
+        null
+    }
+    
+    # If inc plugin worked, return the result
+    if $inc_result != null {
+        return $inc_result
+    }
+    
+    # Fallback to custom implementation if inc plugin is not available
     let parts = ($version | split row ".")
     
     if ($parts | length) != 3 {

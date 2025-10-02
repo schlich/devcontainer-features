@@ -12,6 +12,19 @@ Nushell script to bump version numbers in `devcontainer-feature.json` files. Thi
 - Modern, type-safe shell with better error handling
 - Clean, readable syntax
 - Efficient structured data processing
+- Optional plugin support for enhanced functionality
+
+### Plugin Support
+
+The script automatically uses the `nu_plugin_inc` plugin if installed, providing official Nushell support for semantic versioning:
+
+```bash
+# Install the plugin (optional but recommended)
+cargo install nu_plugin_inc
+nu -c "plugin add ~/.cargo/bin/nu_plugin_inc"
+```
+
+The script works with or without the plugin - it automatically detects and uses it if available.
 
 See [../docs/VERSION_BUMPING.md](../docs/VERSION_BUMPING.md) for complete documentation.
 
