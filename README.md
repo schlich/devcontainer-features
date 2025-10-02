@@ -21,3 +21,9 @@ A collection of devcontainer features.
 | [powerlevel10k](./src/powerlevel10k) | PowerLevel10k is a theme for Zsh. |
 | [rye](./src/rye) | A Hassle-Free Python Experience. |
 | [starship](./src/starship) | The minimal, blazing-fast, and infinitely customizable prompt for any shell! |
+
+## Development
+
+### Version Bumping
+
+See [docs/VERSION_BUMPING.md](./docs/VERSION_BUMPING.md) for information on bumping feature versions.
