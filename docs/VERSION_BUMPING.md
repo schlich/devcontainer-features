@@ -11,24 +11,41 @@ All devcontainer features in this repository follow [Semantic Versioning](https:
 
 ## Tools
 
-### Bump Version Script
+### Bump Version Script (Nushell - Recommended)
 
-The `scripts/bump-version.py` script automates version bumping for features.
+The `scripts/bump-version.nu` script is the primary tool for version bumping, written in [Nushell](https://www.nushell.sh/) for better structured data handling and modern shell features.
+
+#### Why Nushell?
+
+- **Native JSON Support**: Built-in commands for working with JSON without external dependencies
+- **Type Safety**: Better error handling and data validation
+- **Modern Syntax**: Clean, readable code that's easier to maintain
+- **Performance**: Efficient data processing and manipulation
+
+#### Prerequisites
+
+Install nushell:
+```bash
+# Using cargo (Rust package manager)
+cargo install nu
+
+# Or download from https://github.com/nushell/nushell/releases
+```
 
 #### Usage
 
 ```bash
 # Bump patch version for a single feature
-python3 scripts/bump-version.py --feature just --type patch
+nu scripts/bump-version.nu --feature just --type patch
 
 # Bump minor version for a feature (dry run to preview)
-python3 scripts/bump-version.py --feature playwright --type minor --dry-run
+nu scripts/bump-version.nu --feature playwright --type minor --dry-run
 
 # Bump major version for all features
-python3 scripts/bump-version.py --all --type major
+nu scripts/bump-version.nu --all --type major
 
 # Bump patch version for all features (dry run)
-python3 scripts/bump-version.py --all --type patch --dry-run
+nu scripts/bump-version.nu --all --type patch --dry-run
 ```
 
 #### Options
@@ -38,12 +55,21 @@ python3 scripts/bump-version.py --all --type patch --dry-run
 - `--type {major,minor,patch}` or `-t {major,minor,patch}`: Type of version bump (required)
 - `--dry-run` or `-n`: Preview changes without modifying files
 
+### Python Version (Legacy)
+
+A Python version (`scripts/bump-version.py`) is maintained for compatibility but the Nushell version is recommended.
+
+```bash
+# Same usage as nushell version
+python3 scripts/bump-version.py --feature just --type patch
+```
+
 ### Just Recipes
 
 If you have [just](https://github.com/casey/just) installed, you can use convenient recipes:
 
 ```bash
-# Bump a single feature
+# Bump a single feature (uses nushell)
 just bump-version just patch
 just bump-version playwright minor --dry-run
 
@@ -66,6 +92,13 @@ just bump-all-versions minor --dry-run
 
 2. **Bump the version** using one of the tools above:
    ```bash
+   # Using nushell (recommended)
+   nu scripts/bump-version.nu --feature YOUR_FEATURE --type patch
+   
+   # Or using just
+   just bump-version YOUR_FEATURE patch
+   
+   # Or using python (legacy)
    python3 scripts/bump-version.py --feature YOUR_FEATURE --type patch
    ```
 
@@ -109,8 +142,8 @@ After your PR is merged to main, the "CI - Test Features" workflow:
 # 1. Make your fix
 vim src/just/install.sh
 
-# 2. Bump patch version
-python3 scripts/bump-version.py --feature just --type patch
+# 2. Bump patch version (using nushell)
+nu scripts/bump-version.nu --feature just --type patch
 
 # 3. Commit and push
 git add .
@@ -127,8 +160,8 @@ git push origin my-bugfix-branch
 vim src/playwright/devcontainer-feature.json
 vim src/playwright/install.sh
 
-# 2. Bump minor version
-python3 scripts/bump-version.py --feature playwright --type minor
+# 2. Bump minor version (using just recipe)
+just bump-version playwright minor
 
 # 3. Commit and push
 git add .
@@ -144,11 +177,11 @@ git push origin my-feature-branch
 # 1. Make changes to multiple features
 vim src/*/install.sh
 
-# 2. Bump all features (preview first)
-python3 scripts/bump-version.py --all --type patch --dry-run
+# 2. Bump all features (preview first with nushell)
+nu scripts/bump-version.nu --all --type patch --dry-run
 
 # 3. Apply the changes
-python3 scripts/bump-version.py --all --type patch
+just bump-all-versions patch
 
 # 4. Review and commit
 git diff
