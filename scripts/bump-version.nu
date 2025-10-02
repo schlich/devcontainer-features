@@ -117,6 +117,9 @@ def bump_feature_version [
 }
 
 # Bump a semantic version string
+# Note: Nushell had an `inc` command in earlier versions (pre-0.80) that could
+# increment semver strings, but it's not available in current versions (0.107+).
+# This custom implementation provides the same functionality.
 def bump_semver [
     version: string
     bump_type: string

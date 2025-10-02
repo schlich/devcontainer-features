@@ -75,6 +75,12 @@ Nushell provides clearer, more actionable error messages with line numbers and c
 6. **Performance**: Efficient structured data processing
 7. **Maintainability**: Cleaner, more readable code
 
+## Note on `inc` Command
+
+Nushell had an `inc` command in earlier versions (pre-0.80) that could increment semantic version strings directly. However, this command is not available in current versions (0.107.0+). 
+
+Our implementation uses a custom `bump_semver` function that provides the same functionality without depending on deprecated features. See [NUSHELL_INC_COMMAND.md](./NUSHELL_INC_COMMAND.md) for details.
+
 ## Installation
 
 Nushell can be installed via:
