@@ -1,0 +1,109 @@
+---
+name: "Validate Version Bump"
+on:
+  pull_request:
+    paths:
+      - 'src/**/devcontainer-feature.json'
+
+jobs:
+  validate-version-bump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate version changes
+        run: |
+          set -e
+
+          echo "Checking for version changes..."
+
+          # Get changed files
+          CHANGED_FILES=$(git diff --name-only \
+            origin/${{ github.base_ref }}...HEAD | \
+            grep 'devcontainer-feature.json$' || true)
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No devcontainer-feature.json files changed"
+            exit 0
+          fi
+
+          HAS_ERROR=0
+
+          for FILE in $CHANGED_FILES; do
+            echo ""
+            echo "Checking $FILE..."
+
+            # Get old version
+            OLD_VERSION=$(git show \
+              origin/${{ github.base_ref }}:$FILE | \
+              jq -r '.version' 2>/dev/null || echo "")
+            NEW_VERSION=$(jq -r '.version' $FILE 2>/dev/null || echo "")
+            FEATURE_ID=$(jq -r '.id' $FILE 2>/dev/null || echo "unknown")
+
+            if [ -z "$OLD_VERSION" ]; then
+              echo "  New feature: $FEATURE_ID (version: $NEW_VERSION)"
+              continue
+            fi
+
+            if [ -z "$NEW_VERSION" ]; then
+              echo "  Error: Could not read version from $FILE"
+              HAS_ERROR=1
+              continue
+            fi
+
+            # Validate semantic versioning format
+            if ! echo "$NEW_VERSION" | \
+                 grep -qE '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+              echo "  Error: Version does not follow semver"
+              HAS_ERROR=1
+              continue
+            fi
+
+            if [ "$OLD_VERSION" = "$NEW_VERSION" ]; then
+              echo "  Warning: Version unchanged ($OLD_VERSION)"
+            else
+              echo "  Version bumped: $OLD_VERSION -> $NEW_VERSION"
+
+              # Parse versions
+              OLD_MAJOR=$(echo $OLD_VERSION | cut -d. -f1)
+              OLD_MINOR=$(echo $OLD_VERSION | cut -d. -f2)
+              OLD_PATCH=$(echo $OLD_VERSION | cut -d. -f3)
+
+              NEW_MAJOR=$(echo $NEW_VERSION | cut -d. -f1)
+              NEW_MINOR=$(echo $NEW_VERSION | cut -d. -f2)
+              NEW_PATCH=$(echo $NEW_VERSION | cut -d. -f3)
+
+              # Check if version increased
+              if [ $NEW_MAJOR -lt $OLD_MAJOR ]; then
+                echo "  Error: Major version decreased"
+                HAS_ERROR=1
+              elif [ $NEW_MAJOR -eq $OLD_MAJOR ]; then
+                if [ $NEW_MINOR -lt $OLD_MINOR ]; then
+                  echo "  Error: Minor version decreased"
+                  HAS_ERROR=1
+                elif [ $NEW_MINOR -eq $OLD_MINOR ]; then
+                  if [ $NEW_PATCH -lt $OLD_PATCH ]; then
+                    echo "  Error: Patch version decreased"
+                    HAS_ERROR=1
+                  fi
+                fi
+              fi
+            fi
+          done
+
+          if [ $HAS_ERROR -eq 1 ]; then
+            echo ""
+            echo "Version validation failed"
+            exit 1
+          fi
+
+          echo ""
+          echo "All version changes are valid"
+
