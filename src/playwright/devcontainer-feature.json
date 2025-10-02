@@ -13,6 +13,5 @@
       "description": "A SPACE-separated list of browsers to install",
       "default": ""
     }
-  },
-  "postCreateCommand": "npx playwright install ${BROWSERS}"
+  }
 }
