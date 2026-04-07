@@ -1,7 +1,18 @@
 {
     "id": "starship",
-    "version": "0.1.6",
+    "version": "0.2.0-a1",
     "name": "Starship",
     "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
-    "dependsOn": {"ghcr.io/devcontainers/features/common-utils:2": {}}
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "postCreateCommand": "mkdir -p ${HOME}/.config && cp /usr/local/share/.config/starship.toml $HOME/.config/starship.toml",
+    "options": {
+        "character": {
+            "type": "string",
+            "default": "",
+            "description": "Key/value pairs for `character` configuration table.",
+            "proposals": ["success_symbol = '[➜](bold green)', error_symbol = '[✗](bold red) '"] 
+        }
+    }
 }

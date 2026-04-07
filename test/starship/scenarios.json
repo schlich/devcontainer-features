@@ -1,0 +1,11 @@
+{
+  "change_prompt_symbol": {
+    "image": "ubuntu:focal",
+    "features": {
+      "starship": {
+        "character": "success_symbol = '[➜](bold green)', error_symbol = '[✗](bold red) '"
+      }
+    },
+    "remoteUser": "testUserFoo"
+  }
+}
